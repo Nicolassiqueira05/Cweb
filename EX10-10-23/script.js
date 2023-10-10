@@ -1,14 +1,15 @@
+const prompt = require("prompt-sync")();
 //1.
 function ex1() {
-    let nome = "Nicolas"
-    let idade = 18
+    let nome = prompt("nome:")
+    let idade = prompt("idade:")
     alert("Meu nome é " + nome + " e eu tenho " + idade + " anos de idade")    
 }
 //2.
 function ex2(){
     let number = 3
     let number2 = 4
-    let n3 = n1 + n2 * n1
+    let number3 = number + number2 * number
     alert(n3 / 3)    
 }
 //3.
@@ -69,3 +70,4 @@ function ex10(){
     number--
     alert(number)
 }
+ex1()
