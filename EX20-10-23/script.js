@@ -25,6 +25,41 @@ function parimpar(min, max){
     }
     return par + " pares e " + impar + " ímpares"
 }
-function somadig(num){
 
+function sumdig(num){
+    let numstr = num.toString().split("")
+    let i = 0
+    let result = 0
+    while(i < numstr.length){
+        numstr[i] = parseInt(numstr[i])
+        i++
+    }
+    i = 0
+    while(i < numstr.length){
+        result = result + numstr[i]
+        i++
+    }
+    return result
+}
+
+function fibonacci(n){
+    let i = 0
+    let previous = 0
+    let current = 1
+    let sequence = []
+    while(i <= n){
+        sequence[i] = current + previous 
+        previous = current
+        current = sequence[i]
+        i++
+    }
+    return sequence
+}
+
+function tabuada(n){
+    let i = 0
+    while(i <= 10){
+        console.log(n * i)
+        i++
+    }
 }
