@@ -11,14 +11,15 @@ function primo(num){
     }
     return divisores > 2 ? "não primo" : "primo"
 }
-function parimpar(num){
+function parimpar(n){
+    let list = n
     let i = 0
     let par = 0
     let impar = 0
-    while(i <= num.length){
-        if(num[i]%2==0){
+    while(i <= list.length){
+        if (list[i]%2==0 && list[i] != 0){
             par++
-        }else{
+        }else if(list[i]%2==1){
             impar++
         }
         i++
