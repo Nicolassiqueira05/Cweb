@@ -25,6 +25,18 @@ function parimpar(arr){
     }
     return "pares: " + par + " impares: " + impar
 }
+function parimpar2(min, max){
+    let par = 0
+    let impar = 0
+    for(let i = min; i<=max; i++){
+        if(i%2==0){
+            par++
+        }else{
+            impar++
+        }
+    }
+    return "pares: " + par + " impares: " + impar
+}
 function somadig(n){
     let num = n
     let list = num.toString().split("")
